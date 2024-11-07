@@ -45,34 +45,24 @@ APP_SECRET=<app_secret_do_facebook>
 Instalação
 Clone o repositório:
 
-bash
-Copiar código
 git clone https://github.com/seuusuario/seu-repositorio.git
 cd seu-repositorio
-Crie um ambiente virtual e ative-o:
 
-bash
-Copiar código
+Crie um ambiente virtual e ative-o:
 python -m venv venv
 source venv/bin/activate  # Linux/MacOS
 venv\Scripts\activate     # Windows
-Instale as dependências:
 
-bash
-Copiar código
+Instale as dependências:
 pip install -r requirements.txt
 Configure as variáveis de ambiente no arquivo .env, conforme mostrado na seção de Configuração do Ambiente.
 
 Uso
 Inicialize o servidor Flask:
 
-bash
-Copiar código
 flask run
 Conecte-se ao NGROK: Abra um novo terminal e execute:
 
-bash
-Copiar código
 ngrok http 5000
 Copie o link gerado pelo NGROK (ex: https://xxxx.ngrok.io) e configure no webhook do WhatsApp.
 
@@ -82,19 +72,6 @@ Estrutura do Código
 g4f.client.Client: Interface para a API g4f, que gera respostas do ChatGPT.
 Flask: Cria endpoints para receber e processar mensagens do WhatsApp.
 NGROK: Proporciona uma URL pública para testar o bot localmente.
-Contribuição
-Sinta-se à vontade para enviar pull requests ou abrir issues com sugestões e melhorias. Todos os tipos de contribuição são bem-vindos.
-
-Licença
-Distribuído sob a Licença MIT. Veja LICENSE para mais informações.
-
-Esse projeto é uma excelente forma de explorar as possibilidades de automação e atendimento ao cliente com IA. Para dúvidas ou sugestões, sinta-se à vontade para entrar em contato!
-
-perl
-Copiar código
-
-Esse markdown pode ser copiado e colado diretamente no README.md do GitHub.
-
 
 
 
